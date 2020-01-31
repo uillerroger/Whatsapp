@@ -5,7 +5,7 @@ require('dotenv/config')
 const accountSid = process.env.accountSid ;
 const authToken = process.env.authToken;
 const client = require('twilio')(accountSid, authToken);
-const PORT = process.env.PORT || 3000;
+const Port = process.env.PORT || 3000;
  
 
 app.use(bodyParser.urlencoded({ extended: true}))
@@ -42,4 +42,4 @@ client.messages
 
 })
 
-app.listen(PORT, console.log("Conectado"))
+app.listen(Port, console.log("Conectado"))
