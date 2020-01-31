@@ -1,11 +1,11 @@
 const express = require("express");
 const bodyParser = require('body-parser')
 const app = express();
-const PORT = process.env.PORT || 3000;
 require('dotenv/config')
 const accountSid = process.env.accountSid ;
 const authToken = process.env.authToken;
 const client = require('twilio')(accountSid, authToken);
+const PORT = process.env.PORT || 3000;
  
 
 app.use(bodyParser.urlencoded({ extended: true}))
